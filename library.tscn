@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://q1pnhc7kqwq0"]
+
+[ext_resource type="PackedScene" uid="uid://f4wvgu6kf1qj" path="res://shelf.tscn" id="1_iuo7c"]
+[ext_resource type="PackedScene" uid="uid://d11pkmr7qnxpa" path="res://player.tscn" id="2_olk84"]
+
+[node name="Library" type="Node2D" unique_id=1849596143]
+y_sort_enabled = true
+
+[node name="Shelf" parent="." unique_id=551311352 instance=ExtResource("1_iuo7c")]
+position = Vector2(181, 8)
+
+[node name="Shelf2" parent="." unique_id=2064688414 instance=ExtResource("1_iuo7c")]
+position = Vector2(247, 8)
+
+[node name="Shelf3" parent="." unique_id=964812564 instance=ExtResource("1_iuo7c")]
+position = Vector2(177, 108)
+
+[node name="Shelf4" parent="." unique_id=1775133778 instance=ExtResource("1_iuo7c")]
+position = Vector2(242, 108)
+
+[node name="Shelf5" parent="." unique_id=470956219 instance=ExtResource("1_iuo7c")]
+position = Vector2(306, 108)
+
+[node name="Shelf6" parent="." unique_id=1822078382 instance=ExtResource("1_iuo7c")]
+position = Vector2(177, 165)
+
+[node name="Shelf7" parent="." unique_id=759970492 instance=ExtResource("1_iuo7c")]
+position = Vector2(242, 165)
+
+[node name="Shelf8" parent="." unique_id=1450129636 instance=ExtResource("1_iuo7c")]
+position = Vector2(307, 165)
+
+[node name="Player" parent="." unique_id=1434255198 instance=ExtResource("2_olk84")]
+position = Vector2(306, 266)
