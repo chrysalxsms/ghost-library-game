@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dp8idnheyb2f3"]
+
+[ext_resource type="Script" uid="uid://cipwwxqrgi2t3" path="res://lost_book.gd" id="1_mnfxg"]
+[ext_resource type="Texture2D" uid="uid://uo3cq2fp147t" path="res://book13.png" id="2_ityua"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jec8l"]
+radius = 20.0
+
+[node name="LostBook" type="Area2D" unique_id=1015408226]
+script = ExtResource("1_mnfxg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1048058655]
+texture = ExtResource("2_ityua")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=853963949]
+shape = SubResource("CircleShape2D_jec8l")
