@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d11pkmr7qnxpa"]
 
-[ext_resource type="Script" uid="uid://dqh5kdfda6ieb" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://dqh5kdfda6ieb" path="res://scripts/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://bxvx56tobvikq" path="res://idle.png" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jec8l"]
@@ -9,16 +9,15 @@ size = Vector2(9.333334, 10.499999)
 [node name="Player" type="CharacterBody2D" unique_id=1434255198]
 script = ExtResource("1_onrkg")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=510327435]
+scale = Vector2(0.33333334, 0.33333334)
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1475682885]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_onrkg")
 hframes = 13
 vframes = 4
 frame = 26
-
-[node name="Camera2D" type="Camera2D" parent="Sprite2D" unique_id=510327435]
-visible = false
-scale = Vector2(0.6666667, 0.6666667)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=457424874]
 position = Vector2(-2.3841858e-07, 8.125)

@@ -19,7 +19,8 @@ func _on_body_exited(body: Node2D) -> void:
 		player_nearby = false
 
 func _unhandled_input(event: InputEvent) -> void:
-	if player_nearby and event.is_action_pressed("interact"):
-		print("Belongs to: ", owner_ghost)
-		print(description)
+	if player_nearby and not DialogueBox.visible and event.is_action_pressed("interact"):
+		GameState.carried_books.append(owner_ghost)
+		DialogueBox.show_text(description)
+		get_viewport().set_input_as_handled()
 		queue_free()

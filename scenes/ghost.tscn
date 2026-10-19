@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dheuk2pjps8wa"]
+
+[ext_resource type="Script" uid="uid://vwl2m70xjh12" path="res://scripts/ghost.gd" id="1_l5lq6"]
+[ext_resource type="Texture2D" uid="uid://d2e4pf6t5cl65" path="res://assets/000.png" id="1_t76o2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jec8l"]
+radius = 24.0
+
+[node name="Ghost" type="Area2D" unique_id=1155998288]
+script = ExtResource("1_l5lq6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=995457934]
+modulate = Color(1, 1, 1, 0.5882353)
+texture = ExtResource("1_t76o2")
+hframes = 8
+vframes = 7
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1019699332]
+shape = SubResource("CircleShape2D_jec8l")

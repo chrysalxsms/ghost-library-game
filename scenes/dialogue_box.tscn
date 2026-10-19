@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dux3g0ko75kgx"]
+
+[ext_resource type="Script" uid="uid://d4ajfwpy0gayb" path="res://scripts/dialogue_box.gd" id="1_fu8b5"]
+[ext_resource type="Texture2D" uid="uid://ds5pdy0hs7u0y" path="res://dialogue_blue_cloth_3a.png" id="2_tm68y"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_senjy"]
+texture = ExtResource("2_tm68y")
+
+[node name="DialogueBox" type="CanvasLayer" unique_id=466274849]
+script = ExtResource("1_fu8b5")
+
+[node name="Panel" type="PanelContainer" parent="." unique_id=146884708]
+custom_minimum_size = Vector2(240, 120)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_senjy")
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=516343549]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Text" type="Label" parent="Panel/Margin" unique_id=953601639]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+autowrap_mode = 2

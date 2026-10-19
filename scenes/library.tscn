@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://q1pnhc7kqwq0"]
+
+[ext_resource type="PackedScene" uid="uid://f4wvgu6kf1qj" path="res://scenes/shelf.tscn" id="1_m4m2s"]
+[ext_resource type="PackedScene" uid="uid://d11pkmr7qnxpa" path="res://scenes/player.tscn" id="2_n61aj"]
+[ext_resource type="PackedScene" uid="uid://dheuk2pjps8wa" path="res://scenes/ghost.tscn" id="3_n61aj"]
+[ext_resource type="PackedScene" uid="uid://dp8idnheyb2f3" path="res://scenes/lost_book.tscn" id="4_igipr"]
+[ext_resource type="Script" uid="uid://cipwwxqrgi2t3" path="res://scripts/lost_book.gd" id="5_6frsu"]
+
+[node name="Library" type="Node2D" unique_id=1849596143]
+y_sort_enabled = true
+
+[node name="Shelf" parent="." unique_id=551311352 instance=ExtResource("1_m4m2s")]
+position = Vector2(181, 8)
+
+[node name="Shelf2" parent="." unique_id=2064688414 instance=ExtResource("1_m4m2s")]
+position = Vector2(247, 8)
+
+[node name="Shelf3" parent="." unique_id=964812564 instance=ExtResource("1_m4m2s")]
+position = Vector2(177, 108)
+
+[node name="Shelf4" parent="." unique_id=1775133778 instance=ExtResource("1_m4m2s")]
+position = Vector2(242, 108)
+
+[node name="Shelf5" parent="." unique_id=470956219 instance=ExtResource("1_m4m2s")]
+position = Vector2(306, 108)
+
+[node name="Shelf6" parent="." unique_id=1822078382 instance=ExtResource("1_m4m2s")]
+position = Vector2(177, 165)
+
+[node name="Shelf7" parent="." unique_id=759970492 instance=ExtResource("1_m4m2s")]
+position = Vector2(242, 165)
+
+[node name="Shelf8" parent="." unique_id=1450129636 instance=ExtResource("1_m4m2s")]
+position = Vector2(307, 165)
+
+[node name="Player" parent="." unique_id=1434255198 instance=ExtResource("2_n61aj")]
+position = Vector2(255, 129)
+
+[node name="Ghost" parent="." unique_id=1155998288 instance=ExtResource("3_n61aj")]
+position = Vector2(181, 70)
+ghost_name = "Edith"
+
+[node name="LostBook" parent="." unique_id=1015408226 instance=ExtResource("4_igipr")]
+position = Vector2(338, 69)
+script = ExtResource("5_6frsu")
+owner_ghost = "Edith"
