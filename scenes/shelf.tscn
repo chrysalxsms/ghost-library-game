@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://f4wvgu6kf1qj"]
 
+[ext_resource type="Texture2D" uid="uid://duy8qiewfnjky" path="res://assets/Book_Shop_Tiles/PNG/book_shop_props.png" id="1_eyi4x"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jec8l"]
 size = Vector2(64, 16)
 
@@ -8,9 +10,7 @@ size = Vector2(64, 16)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1984090340]
 shape = SubResource("RectangleShape2D_jec8l")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=196797548]
-offset_left = -32.0
-offset_top = -8.0
-offset_right = 32.0
-offset_bottom = 8.0
-color = Color(0.24, 0.14788, 0.12239999, 1)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1698554302]
+texture = ExtResource("1_eyi4x")
+region_enabled = true
+region_rect = Rect2(32, 96, 32, 64)

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://5rvcj0nhjr1f" path="res://assets/walk.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jec8l"]
-size = Vector2(9.333334, 10.499999)
+size = Vector2(13.333334, 14.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
 atlas = ExtResource("2_g2els")
@@ -288,10 +288,11 @@ script = ExtResource("1_onrkg")
 scale = Vector2(0.33333334, 0.33333334)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=457424874]
-position = Vector2(-2.3841858e-07, 8.125)
+position = Vector2(-2.3841858e-07, 11.125)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_jec8l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=628650005]
+scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_jec8l")
 animation = &"walk_down"
